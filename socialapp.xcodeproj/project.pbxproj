@@ -19,6 +19,7 @@
 		5BC27F361E83FE04002AA66A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BC27F351E83FE04002AA66A /* Assets.xcassets */; };
 		5BC27F391E83FE04002AA66A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BC27F371E83FE04002AA66A /* LaunchScreen.storyboard */; };
 		5BC27F411E83FEAB002AA66A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5BC27F401E83FEAB002AA66A /* GoogleService-Info.plist */; };
+		5BE9612E1E8C316000296799 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE9612D1E8C316000296799 /* FeedVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		5BC27F381E83FE04002AA66A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BC27F3A1E83FE04002AA66A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BC27F401E83FEAB002AA66A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5BE9612D1E8C316000296799 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		C4981DE62310C252074AE4B6 /* Pods-socialapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-socialapp/Pods-socialapp.debug.xcconfig"; sourceTree = "<group>"; };
 		EBB0A68EEE8FBD8CCEA36F40 /* Pods_socialapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_socialapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				5BC27F301E83FE04002AA66A /* SInginVC.swift */,
+				5BE9612D1E8C316000296799 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				5BC27F311E83FE04002AA66A /* SInginVC.swift in Sources */,
 				5B1325B01E85CBF50016E464 /* RoundButton.swift in Sources */,
 				5B1325B41E85CF590016E464 /* FancyButton.swift in Sources */,
+				5BE9612E1E8C316000296799 /* FeedVC.swift in Sources */,
 				5BC27F2F1E83FE04002AA66A /* AppDelegate.swift in Sources */,
 				5BBF42641E84545500B89905 /* FancyView.swift in Sources */,
 				5BBF42671E8454E900B89905 /* Constants.swift in Sources */,
