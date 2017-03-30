@@ -11,6 +11,7 @@
 		5B1325B01E85CBF50016E464 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1325AF1E85CBF50016E464 /* RoundButton.swift */; };
 		5B1325B21E85CD8B0016E464 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1325B11E85CD8B0016E464 /* FancyField.swift */; };
 		5B1325B41E85CF590016E464 /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1325B31E85CF590016E464 /* FancyButton.swift */; };
+		5B78C8771E8D4367008BB9A0 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B78C8761E8D4367008BB9A0 /* CircleView.swift */; };
 		5BBF42641E84545500B89905 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBF42631E84545500B89905 /* FancyView.swift */; };
 		5BBF42671E8454E900B89905 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBF42661E8454E900B89905 /* Constants.swift */; };
 		5BC27F2F1E83FE04002AA66A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC27F2E1E83FE04002AA66A /* AppDelegate.swift */; };
@@ -28,6 +29,7 @@
 		5B1325B11E85CD8B0016E464 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		5B1325B31E85CF590016E464 /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
 		5B1325BB1E85E75C0016E464 /* socialapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = socialapp.entitlements; sourceTree = "<group>"; };
+		5B78C8761E8D4367008BB9A0 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		5BBF42631E84545500B89905 /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		5BBF42661E8454E900B89905 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5BC27F2B1E83FE04002AA66A /* socialapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = socialapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +115,7 @@
 				5B1325AF1E85CBF50016E464 /* RoundButton.swift */,
 				5B1325B11E85CD8B0016E464 /* FancyField.swift */,
 				5B1325B31E85CF590016E464 /* FancyButton.swift */,
+				5B78C8761E8D4367008BB9A0 /* CircleView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B78C8771E8D4367008BB9A0 /* CircleView.swift in Sources */,
 				5B1325B21E85CD8B0016E464 /* FancyField.swift in Sources */,
 				5BC27F311E83FE04002AA66A /* SInginVC.swift in Sources */,
 				5B1325B01E85CBF50016E464 /* RoundButton.swift in Sources */,
