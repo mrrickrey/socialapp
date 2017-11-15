@@ -12,6 +12,8 @@
 		5B1325B21E85CD8B0016E464 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1325B11E85CD8B0016E464 /* FancyField.swift */; };
 		5B1325B41E85CF590016E464 /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1325B31E85CF590016E464 /* FancyButton.swift */; };
 		5B78C8771E8D4367008BB9A0 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B78C8761E8D4367008BB9A0 /* CircleView.swift */; };
+		5B8323D21E9D827D008BF6CF /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8323D11E9D827D008BF6CF /* PostCell.swift */; };
+		5BB600771FBCB76B00958B9C /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB600761FBCB76B00958B9C /* DataService.swift */; };
 		5BBF42641E84545500B89905 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBF42631E84545500B89905 /* FancyView.swift */; };
 		5BBF42671E8454E900B89905 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBF42661E8454E900B89905 /* Constants.swift */; };
 		5BC27F2F1E83FE04002AA66A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC27F2E1E83FE04002AA66A /* AppDelegate.swift */; };
@@ -30,6 +32,8 @@
 		5B1325B31E85CF590016E464 /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
 		5B1325BB1E85E75C0016E464 /* socialapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = socialapp.entitlements; sourceTree = "<group>"; };
 		5B78C8761E8D4367008BB9A0 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		5B8323D11E9D827D008BF6CF /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		5BB600761FBCB76B00958B9C /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		5BBF42631E84545500B89905 /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		5BBF42661E8454E900B89905 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5BC27F2B1E83FE04002AA66A /* socialapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = socialapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +61,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BB600751FBCB75800958B9C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5BB600761FBCB76B00958B9C /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		5BBF42651E8454D600B89905 /* Util */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +98,7 @@
 		5BC27F2D1E83FE04002AA66A /* socialapp */ = {
 			isa = PBXGroup;
 			children = (
+				5BB600751FBCB75800958B9C /* Services */,
 				5B1325BB1E85E75C0016E464 /* socialapp.entitlements */,
 				5BBF42651E8454D600B89905 /* Util */,
 				5BC27F441E84007B002AA66A /* Controller */,
@@ -116,6 +129,7 @@
 				5B1325B11E85CD8B0016E464 /* FancyField.swift */,
 				5B1325B31E85CF590016E464 /* FancyButton.swift */,
 				5B78C8761E8D4367008BB9A0 /* CircleView.swift */,
+				5B8323D11E9D827D008BF6CF /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -284,6 +298,8 @@
 				5BC27F2F1E83FE04002AA66A /* AppDelegate.swift in Sources */,
 				5BBF42641E84545500B89905 /* FancyView.swift in Sources */,
 				5BBF42671E8454E900B89905 /* Constants.swift in Sources */,
+				5BB600771FBCB76B00958B9C /* DataService.swift in Sources */,
+				5B8323D21E9D827D008BF6CF /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
