@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="17A365" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--SinginVC-->
         <scene sceneID="tne-QT-ifu">
@@ -208,6 +213,9 @@
                                                     <constraint firstAttribute="width" constant="49" id="Nxm-fv-87R"/>
                                                 </constraints>
                                                 <state key="normal" image="add-post"/>
+                                                <connections>
+                                                    <action selector="postBtnTapped:" destination="dCf-Qb-2iK" eventType="touchUpInside" id="KkR-8T-ngg"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -341,6 +349,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="captionField" destination="QVF-KN-bii" id="pFJ-G5-GEk"/>
                         <outlet property="imageAdd" destination="10Q-8X-hQl" id="aQ2-DZ-rds"/>
                         <outlet property="tableView" destination="vaU-z3-m58" id="GKn-fO-n5t"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="nFv-xq-fNC"/>
