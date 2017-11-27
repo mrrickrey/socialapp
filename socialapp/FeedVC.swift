@@ -18,14 +18,17 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     
     var posts = [Post]()
     var imagePicker: UIImagePickerController!
+    //declares the cache
+    static var imageCache: NSCache<NSString, UIImage> = NSCache()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         tableView.delegate = self
         tableView.dataSource = self
-        
+        //init the image picker
         imagePicker = UIImagePickerController()
+        //allows cropping of larger images
         imagePicker.allowsEditing = true
         imagePicker.delegate = self
         
@@ -66,8 +69,15 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         let post = posts[indexPath.row]
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as? PostCell {
-            cell.configureCell(post: post)
-            return cell
+            
+            if let img = FeedVC.imageCache.object(forKey: post.imageUrl as NSString) {
+                cell.configureCell(post: post, img: img)
+                return cell
+            } else {
+                cell.configureCell(post: post)
+                return cell
+            }
+            
         } else {
             return PostCell()
         }
@@ -75,6 +85,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     
     //image picker function
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        //sets the image picker buttons image to the users selected image
         if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
             imageAdd.image = image
         }
@@ -82,6 +93,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     }
     
     @IBAction func addImgTapped(_ sender: Any) {
+        //presents the image picker
         present(imagePicker, animated: true, completion: nil)
         
     }

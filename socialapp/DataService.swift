@@ -12,16 +12,24 @@ import Firebase
 
 //holds database url
 let DB_BASE = FIRDatabase.database().reference()
+//holds storage url
+let STORAGE_BASE = FIRStorage.storage().reference()
 
 class DataService {
     
     static let ds = DataService()
     
+    
+    
+    //DB References
     private var _REF_BASE = DB_BASE
     private var _REF_POST = DB_BASE.child("posts") //db post
     private var _REF_USERS = DB_BASE.child("users") //db users
     
-    //securing private variables
+    //Storage Reference
+    private var _REF_POST_IMG = STORAGE_BASE.child("post-pics") //folder in storage
+    
+    //securing db private variables
     var REF_BASE: FIRDatabaseReference {
         return _REF_BASE
     }
@@ -33,6 +41,12 @@ class DataService {
     var REF_USERS: FIRDatabaseReference {
         return _REF_USERS
     }
+    
+    //secure storage var
+    var REF_POST_IMAGES: FIRStorageReference {
+        return _REF_POST_IMG
+    }
+    
     
     func createFirebaseDBUser(uid: String, userData: Dictionary<String, String> ) {
         _REF_USERS.child(uid).updateChildValues(userData)
