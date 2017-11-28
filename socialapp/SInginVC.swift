@@ -66,6 +66,13 @@ class SinginVC: UIViewController {
             
         })
     }
+    
+    
+    @IBAction func createAccTap(_ sender: Any) {
+        performSegue(withIdentifier: "goSignup", sender: nil)
+    }
+    
+    
     @IBAction func singinTapped(_ sender: Any) {
         
         if let email = emailField.text, let pwd = pwdField.text {
